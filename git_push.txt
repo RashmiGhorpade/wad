@@ -1,0 +1,83 @@
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt
+$ git clone https://github.com/RashmiGhorpade/wad.git
+Cloning into 'wad'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt
+$ git add *
+fatal: not a git repository (or any of the parent directories): .git
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt
+$ cd wad
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt/wad (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt/wad (main)
+$ git add *
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt/wad (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test
+
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt/wad (main)
+$ git config user.email "ghorpaderashmi45@gmail.com"
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt/wad (main)
+$ git commit -m "added local change"
+[main ef787e5] added local change
+ 1 file changed, 1 insertion(+)
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt/wad (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt/wad (main)
+$ git push https://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@github.com/RashmiGhorpade/wad.git
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/RashmiGhorpade/wad.git
+   42fad37..ef787e5  main -> main
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt/wad (main)
+$ git pull https://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@github.com/RashmiGhorpade/wad.git
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 683 bytes | 8.00 KiB/s, done.
+From https://github.com/RashmiGhorpade/wad
+ * branch            HEAD       -> FETCH_HEAD
+Updating ef787e5..75f24bf
+Fast-forward
+ test | 1 +
+ 1 file changed, 1 insertion(+)
+
+admin@DESKTOP-GIH301P MINGW64 ~/Desktop/kbt/wad (main)
+$
